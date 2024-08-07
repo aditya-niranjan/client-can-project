@@ -283,7 +283,7 @@ nav i{
 
 
 
-@media (max-width: 799px) and (min-width:1000px)  {
+@media (max-width: 799px) and (max-width:1000px)  {
 
     .main{
         display: none;
