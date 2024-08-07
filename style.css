@@ -1,0 +1,569 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    scroll-behavior: smooth;
+    background:rgba(170, 37, 37, 0.939);
+
+}
+
+body::-webkit-scrollbar{
+    display: none;
+   
+}
+
+#main{
+    width: 100%;
+    height: 100vh;
+    background:url(Assets2/magicpattern-mesh-gradient-1722524507236.png);
+}
+nav{
+    width: 100%;
+    height: 5vw;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(255, 255, 255, 0.462);
+    border-radius: 12px;
+    border: 1px solid rgba(209, 213, 219, 0.367);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0vw 5vw;
+    /* position: relative; */
+    z-index: 9;
+}
+.nav0overlay{
+    width: 20%;
+    right: 0%;
+    height: 100vh;
+    background: rgba(255, 255, 255, 0.565);
+    display: none;
+}
+.cnter-nav2{
+    font-size: 2vw;
+    flex-direction: column;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    text-transform: uppercase;
+    display: none;
+}
+.cnter-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 3vw;
+}
+nav h1{
+    font-size: 2.5vw;
+}
+
+.div-nav{
+    display: none;
+}
+nav a{
+    font-size: 1.6vw;
+    text-decoration: none;
+    color: #231d1d;
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 200;
+}
+
+nav i{
+    font-size: 2vw;
+    cursor: pointer;
+}
+.fanta{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fanta h1{
+    font-size: 20vw;
+    font-weight: 200;
+}
+.fanta h1{
+    text-decoration: solid;
+    text-transform: uppercase;
+    letter-spacing: 0.7vw;
+    color: #fff;
+    margin-top: 10%;
+}
+
+#fanta-img{
+    width: 40%;
+    top:9%;
+    z-index: 2;
+    position: absolute;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
+    /* transform: rotate(25deg); */
+}
+
+
+#oarange-circle{
+    width: 18%;
+    top: 5%;
+    left: 36%;
+}
+#oarange-circle{
+    position: absolute;
+    z-index: 1;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
+}
+
+#org-fruites{
+    width: 18%;
+    top: 19%;
+    left: 49%;
+
+}
+#org-fruites{
+    position: absolute;
+    z-index: 3;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
+}
+
+#leaf-1{
+    width: 17.4%;
+    top: 6%;
+    left: 5%;
+}
+#leaf-1{
+    position: absolute;
+    transform: rotate(-45deg);
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
+}
+
+#leaf-2{
+    width: 12.4%;
+    top:13%;
+    right: 5%;
+}
+#leaf-2{
+    position: absolute;
+    transform: rotate(-15deg);
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)0.5s;
+}
+
+.div-container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.left-div, .right-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 110vh;
+    background: rgba(170, 37, 37, 0.939);
+    gap: 10vh;
+}
+
+.left-div svg{
+   margin-top: 45vh;
+   width: 55%;
+}
+.left-div svg{
+   transform: rotateX(-45deg);
+}
+.right-div{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 2%;
+}
+.right-div h1{
+    font-size: 6vw;
+}
+.right-div h1{
+    white-space: wrap;
+    color: #f5f1f1;
+    z-index: 20;
+}
+.right-div p{
+    font-size: 1.4vw;
+    white-space: wrap;
+    width: 70%;
+    color: #ffffffe0;   
+}
+
+.page3{
+    width: 100%;
+    height: 120vh;
+    background-color: rgb(241, 206, 159);
+
+}
+
+.card-div{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#page3, .card-1, .card-2, .card-3{
+    width: 20vw;
+    height: 78vh;
+    background-color: #e18215ef;
+   margin-top: 10vw;
+   display: flex;
+   align-items: center;
+   justify-content: flex-end;
+   flex-direction: column;
+   gap: 1vw;
+   padding-bottom: 4vw;
+   border-radius: 1.4vw;
+   margin-top: 20vw;
+   position: relative;
+}
+
+#last-heading{
+    font-size: 20vw;
+    display: none;
+}
+
+
+.card-div h1{
+    font-size: 2.3vw;
+    color: #fff;
+    text-transform: uppercase;
+}
+.card-div button{
+    font-size: 1vw;
+    color: #0e0202;
+    padding: 10px;
+    text-transform: uppercase;
+    border-radius: 1vw;
+}
+
+.card-1 img{
+    width: 80%;
+    z-index: 10;
+}
+.card-3 img{
+    width:123%;
+    margin-bottom: -2vw;
+    z-index: 10;
+
+}
+
+ 
+#cricle-1{
+    width:30vw;
+    position: absolute;
+    top: -22%;
+    z-index: 1;
+}
+#cricle-2{
+    width: 30vw;
+    position: absolute;
+    top: -22%;
+    z-index: 1;
+}
+
+.resp{
+    display: none;
+}
+
+
+
+
+/* ----------------------------------------responsive--------------------------------------- */
+
+
+@media (max-width: 799px) {
+
+    .main{
+        display: none;
+
+    }
+
+    body{
+        background-color: #fff;
+    }
+
+    .resp{
+        display: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 10vw 5vw;
+    }
+    #resp-note{
+        font-size: 8vw;
+        padding: 5vw;
+    }
+    .resp p{
+        font-size: 1.5em;
+        line-height: 1.6em;
+    }
+/*     
+    .nav0overlay{
+        width: 51%;
+        right: -51%;
+        height: 190vh;
+        backdrop-filter: blur(10px);
+        background-color: #f5f1f153;
+        display: block;
+        position: absolute;
+        z-index: 200;
+    }
+
+    .cnter-nav2{
+        display:block;
+        display: flex;
+        gap: 5vw;
+        margin-top: 10vw;
+        padding-left: 12vw;
+        display: block;
+
+    }
+    .cnter-nav2 a{
+        font-size: 5vw;
+        flex-direction: column;
+        text-decoration: none;
+        color: #534141;
+        display: block;
+    }
+
+    .nav0overlay i{
+        font-size: 7vw;
+        position: absolute;
+        top: 3.6vw;
+        right: 5vw;
+        cursor: pointer;
+        display: block; 
+
+    }*/
+
+    nav{
+        height: 17vw;
+        border-radius: 0%;
+    }
+    .cnter-nav{
+        display: none;
+    }
+    nav i{
+        font-size: 8vw;
+        cursor: pointer;
+    }
+    nav h1 {
+        font-size: 9.5vw;
+    }
+
+   #org-fruites{
+    width: 52vw;
+    left: 39vw;
+    top: 75vh;
+    z-index: 6;
+    }
+    
+    #fanta-img {
+        width: 93vw;
+        top: 67vw;
+        left: 6vw;
+        z-index: 5;
+      
+    }
+    /* #oarange-circle {
+        width: 18vw;
+        top: 5vw;
+        left: 36vw;
+        z-index: 4;
+    } */
+    #oarange-circle {
+        width: 33vw;
+        top: 52vw;
+        left: 24vw;
+        z-index: 4;
+    }
+    #leaf-1 {
+        width: 30vw;
+        top: 16vw;
+        left: -1vw;
+        z-index: 2;
+        transform: rotate(-45deg);
+    }
+    #leaf-2 {
+        width: 27vw;
+        top: 22vw;
+        right: 6vw;
+        z-index: 2;
+        transform: rotate(-13deg);
+    }
+    .div-container{
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height:160vh;
+    }
+    .left-div{
+        width: 100%;
+    }
+    .right-div{
+        width: 100%;
+        gap: 14vh;
+    }
+    .left-div svg {
+        transform: none;
+    }
+    .left-div svg {
+        margin-top:30vh;
+        width: 55%;
+        height:50vh;
+        gap: 5vh;
+    }
+    .right-div h1 {
+        font-size:22vw;
+        margin-top: -22vh;
+    }
+    .right-div p {
+        font-size: 5.4vw;
+        white-space: wrap;
+        width: 90%;
+    }
+    .right-div {
+        padding-left: 2%;
+    }
+    .left-div, .right-div{
+       padding: 0% 5%;
+    }
+    .card-div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .fanta h1 {
+        font-size: 28vw;
+        font-weight: 0;
+    }
+
+    .fanta h1 {
+        letter-spacing: 0.5vw;
+        color: #fff;
+        padding: 60vw 0vh 2vw;
+    }
+
+    .page3 {
+        width: 100%;
+        height: 240vh;
+        background-color: rgba(214, 209, 111, 0.867);
+    }
+
+    #page3, .card-1, .card-2, .card-3 {
+        width: 45vw;
+        height: 60vh;
+        background-color: #ec8613eb;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        flex-direction: column;
+        gap: 1vw;
+        padding-bottom: 4vw;
+        border-radius: 50vw;
+        margin-top: 20vw;
+        position: relative;
+    }
+    .card-div h1 {
+        font-size: 5.3vw;
+        color: #fff;
+        text-transform: uppercase;
+    }
+    .card-div button {
+        font-size: 3vw;
+        color: #0e0202;
+        padding: 11px;
+        text-transform: uppercase;
+        border-radius: 4vw;
+    }
+
+    #cricle-1 {
+        width: 66vw;
+        position: absolute;
+        top: -4%;
+        z-index: 1;
+    }
+    #cricle-2 {
+        width: 64vw;
+        position: absolute;
+        top: -8%;
+        z-index: 1;
+    }
+
+
+    #last-heading{
+        font-size: 7vw;
+        display: block;
+        margin-top: 5vw;
+        padding: 5%;
+        color: #fff;
+        font-weight: 100;
+        text-transform: uppercase;
+        white-space: wrap;
+    }
+    .div-nav{
+        display:block;
+        width: 65%;
+        height: 100vh;
+        backdrop-filter: blur(10px);
+        background: #ffffff48;
+        position: absolute;
+        right: -65%;
+        z-index: 100;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .div-nav i{
+        font-size: 7vw;
+        position: absolute;
+        top: 5vw;
+        right: 6vw;
+    }
+
+    .cnter-nav3{
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+        gap: 2vw;
+        position: absolute;
+        top: 25vh;
+    }
+
+
+    .cnter-nav3 h4{
+        font-size: 8vw;
+        font-weight: 50;
+        color: #040303;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+    /* .cnter-nav3 span{
+        overflow-x: hidden;
+    } */
+
+
+}
+
+
+
+
+
+
+
+
