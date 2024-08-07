@@ -17,8 +17,6 @@ body::-webkit-scrollbar{
    
 }
 
-@media (min-width:800px) {
-    
 
 
 #main{
@@ -279,20 +277,13 @@ nav i{
 }
 
 
-}
+
 
 /* ----------------------------------------responsive--------------------------------------- */
 
 
 
-
-
-
-
-
-
-
-@media (max-width: 799px) {
+@media (max-width: 799px) and (max-width:799px)  {
 
     .main{
         display: none;
